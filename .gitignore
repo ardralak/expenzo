@@ -1,0 +1,15 @@
+# Ignore node_modules from frontend/backend
+frontend/node_modules/
+backend/node_modules/
+
+# Build artifacts
+frontend/dist/
+backend/dist/
+
+# Environment files
+*.env
+
+# System files
+.DS_Store
+Thumbs.db
+.vscode/
