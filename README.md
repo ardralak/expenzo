@@ -48,7 +48,7 @@ The official MongoDB driver for Python is pymongo, and for asynchronous usage (l
 
  
 
-If network blocks you, run : pip install pymongo motor --proxy=http://rb-proxy-in.bosch.com:8080 
+If network blocks you, run : pip install pymongo motor --proxy=
 
 Picture 1, Picture 
 
@@ -190,7 +190,7 @@ Open cmd inside this folder and run
 
 First login in Login - JFrog 
 
-npm config set registry https://rb-artifactory.bosch.com/artifactory/api/npm/bci-npm-virtual/ 
+npm config set registry registry_url
 
 npm login 
 
