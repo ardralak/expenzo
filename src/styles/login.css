@@ -15,18 +15,13 @@
 
 .coin    { top: 10%; left: 75%; }
 .piggy   { top: 40%; left: 5%; }
-.shopping{ top: 10%; left: 80%; }
+.shopping{ top: 60%; left: 80%; }
 .rupee   { top: 60%; left: 10%; }
 .chart   { top: 65%; left: 15%; }
-
-.sparkle {
-  color: rgb(18, 151, 89);
-  animation: sparkle 6s infinite ease-in-out;
-  filter: blur(0.5px);
-}
-
-.sparkle1 { top: 64%; left: 28%; }
-.sparkle2 { top: 0.1%; left: 58%; }
+.clapperboard { top: -50%; right: -20%; }
+.briefcase-medical { top: 5%; right: 30%; }
+.utensils { top: 5%; right: -30%; }
+.fuel { top: 15%; right: 35%; }
 
 @keyframes float {
   0%   { transform: translateY(0) rotate(0deg); }
