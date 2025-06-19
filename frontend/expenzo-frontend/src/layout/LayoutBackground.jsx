@@ -1,4 +1,4 @@
-// src/layout/layoutBackground.jsx
+import "../styles/LayoutBackround.css"
 import { PiggyBank, IndianRupee, ShoppingCart, Coins, BarChart3, Sparkles,ChartNoAxesCombined } from 'lucide-react';
 
 function LayoutBackground() {
