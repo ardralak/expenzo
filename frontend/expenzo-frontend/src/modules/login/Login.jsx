@@ -4,6 +4,8 @@ import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 import {CreditCard, PiggyBank, IndianRupee, ShoppingCart, Coins, BarChart3, ChartNoAxesCombined } from 'lucide-react';
 import '../../styles/login.css';
+import mainLogo from '../../assets/mainlogo.png';
+import { useNavigate } from "react-router-dom";
 
 
 const data = [
@@ -12,7 +14,15 @@ const data = [
   { month: "Mar", Shopping: 500, Grocery: 250, Travel: 150 },
 ];
 
+
 export default function Login() {
+const navigate = useNavigate();
+
+const handleLogin = (e) => {
+  e.preventDefault(); // prevent form refresh
+  //Add validation logic here
+  navigate("/dashboard");
+};
   return (
     
     <div className="flex min-h-screen">
@@ -63,13 +73,15 @@ export default function Login() {
         <PiggyBank className="bg-icon piggy" />
         <ShoppingCart className="bg-icon shopping" />
         <IndianRupee className="bg-icon rupee" />
- 
+        <div className="flex justify-center mb-6">
+          <img src={mainLogo} alt="Expenzo Logo"className="scale-[3.0] max-h-16 object-contain"/>
+</div>
         <h2 className="text-xl font-semibold text-center mb-8 text-white">
           Sign in to your account
         </h2>
  
         <div className="flex justify-center">
-          <form className="space-y-5 w-full max-w-xs">
+          <form onSubmit={handleLogin} className="space-y-5 w-full max-w-xs">
             <input
               type="text"
               placeholder="Username"
@@ -98,7 +110,7 @@ export default function Login() {
             </div>
  
             <button
-              type="submit"
+              type="submit" 
               className="w-full bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded"
             >
               Login
