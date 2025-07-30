@@ -1,6 +1,5 @@
-// src/pages/Dashboard.jsx
 import React, { useState } from "react";
-import Sidebar from "../dashboard/sidebar";
+import Sidebar from "./Menubar";
 import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Legend } from "recharts";
 import { Plus } from "lucide-react";
 
@@ -37,7 +36,7 @@ const CustomDarkTooltip = ({ active, payload }) => {
   return null;
 };
 
-export default function Dashboard() {
+export default function Dash() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
     return (

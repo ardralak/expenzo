@@ -1,6 +1,6 @@
 import { Home, PieChart, BarChart3, LogOut, PlusCircle } from 'lucide-react';
 
-export default function Sidebar({ isOpen, onToggle }) {
+export default function Menubar({ isOpen, onToggle }) {
   return (
     <div
       className={`h-screen bg-[#121212] text-white shadow-lg transition-all duration-300 flex flex-col ${
